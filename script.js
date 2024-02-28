@@ -64,9 +64,15 @@ function drawShape(shape) {
 function clearCanvas() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
-
+function showData(){
+  console.log(shapes, "test");
+}
 // Add an event listener for the clear button
-document.getElementById('clearButton').addEventListener('click', function () {
+/*document.getElementById('clearButton').addEventListener('click', function () {
   clearCanvas();
   shapes = [];
 });
+*/
+document.getElementById('showButton').addEventListener('click', function(){
+  showData();
+})
